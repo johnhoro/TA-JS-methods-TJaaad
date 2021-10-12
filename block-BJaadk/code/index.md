@@ -10,8 +10,8 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
-![](./img/main.png)
 
+![](../img/img1.jpeg)
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -20,6 +20,8 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
+
+![](../img/img2.jpeg)
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -61,6 +63,8 @@ function addTwo(num) {
 let doubleNumbers = numbers.map(addTwo);
 ```
 
+![](../img/img3.jpeg)
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function isOdd(num) {
@@ -84,6 +88,8 @@ function test(num) {
 }
 let filteredNumbers = numbers.filter(test);
 ```
+
+![](../img/img4.jpeg)
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
