@@ -1,23 +1,31 @@
 let persons = [
-  { name: 'John', grade: 8, sex: 'M' },
-  { name: 'Sarah', grade: 12, sex: 'F' },
-  { name: 'Bob', grade: 16, sex: 'M' },
-  { name: 'Johnny', grade: 2, sex: 'M' },
-  { name: 'Ethan', grade: 4, sex: 'M' },
-  { name: 'Paula', grade: 18, sex: 'F' },
-  { name: 'Donald', grade: 5, sex: 'M' },
-  { name: 'Jennifer', grade: 13, sex: 'F' },
-  { name: 'Courtney', grade: 15, sex: 'F' },
-  { name: 'Jane', grade: 9, sex: 'F' },
-  { name: 'John', grade: 17, sex: 'M' },
-  { name: 'Arya', grade: 14, sex: 'F' },
+  { name: "John", grade: 8, sex: "M" },
+  { name: "Sarah", grade: 12, sex: "F" },
+  { name: "Bob", grade: 16, sex: "M" },
+  { name: "Johnny", grade: 2, sex: "M" },
+  { name: "Ethan", grade: 4, sex: "M" },
+  { name: "Paula", grade: 18, sex: "F" },
+  { name: "Donald", grade: 5, sex: "M" },
+  { name: "Jennifer", grade: 13, sex: "F" },
+  { name: "Courtney", grade: 15, sex: "F" },
+  { name: "Jane", grade: 9, sex: "F" },
+  { name: "John", grade: 17, sex: "M" },
+  { name: "Arya", grade: 14, sex: "F" },
 ];
 
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
+function reduce(array, cb, iv) {
+  let acc = iv;
+  for (let i = 0; i < array.length; i++) {
+    let elm = array[i];
+    acc = cb(acc, elm, i, array);
+  }
+  return;
+}
 
-// Find the average grade of male
+// Find the average grade of male.
 
 // Find the average grade of female
 
@@ -30,17 +38,17 @@ let persons = [
 // Find the highest grade for people whose name starts with 'J' or 'P'
 
 const fruitBasket = [
-  'banana',
-  'cherry',
-  'orange',
-  'apple',
-  'cherry',
-  'orange',
-  'apple',
-  'banana',
-  'cherry',
-  'orange',
-  'fig',
+  "banana",
+  "cherry",
+  "orange",
+  "apple",
+  "cherry",
+  "orange",
+  "apple",
+  "banana",
+  "cherry",
+  "orange",
+  "fig",
 ];
 
 /* 
